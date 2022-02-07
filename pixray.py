@@ -504,7 +504,7 @@ def do_init(args):
     # print("-----------> NUMR ", num_resolutions)
     #as of torch 1.8, jit produces errors. The below code no longer works with 1.10
     #jit = True if float(torch.__version__[:3]) < 1.8 else False
-    jit = False
+    jit = True
 
     if num_resolutions!=None:
         f = 2**(num_resolutions - 1)
